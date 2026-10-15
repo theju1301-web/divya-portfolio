@@ -71,7 +71,7 @@ document.getElementById("year").textContent =
 // This form opens the visitor's default email application.
 // It does not send emails directly from the website.
 
-const portfolioEmail = "theju1301@gmail.com";
+const portfolioEmail = "your@gmail,com";
 
 const contactForm = document.getElementById("contactForm");
 
