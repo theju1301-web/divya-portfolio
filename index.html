@@ -3,10 +3,243 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Divya's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#674D66">
+  <meta name="description" content="Divya S — Creative Techie. A little creativity in everything I create.">
+  <title>Divya S | Creative Techie</title>
+
+  <!-- Handwritten fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- External JavaScript -->
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Hi, I'm Divya! 💗</h1>
-  <p>My creative portfolio is coming soon.</p>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="logo" href="#home">d<span>ivya.</span></a>
+
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="navLinks">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <header class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Hello, welcome to my little space</p>
+        <h1>Divya S</h1>
+        <p class="role">Creative Techie</p>
+        <p class="hero-copy">A little creativity in everything I create.</p>
+        <p class="handwritten-note">dream it · design it · make it ♡</p>
+
+        <div class="buttons">
+          <a class="btn btn-light" href="#projects">Explore my work ↗</a>
+          <a class="btn btn-outline" href="#contact">Say hello ♡</a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Decorative portfolio illustration">
+        <span class="star star-one" aria-hidden="true">✧</span>
+        <span class="star star-two" aria-hidden="true">✦</span>
+
+        <div class="portrait">
+          <div class="portrait-inner">
+            <div class="flower">✿</div>
+            <div class="portrait-name">Divya</div>
+            <small>CREATIVE MIND · CURIOUS HEART</small>
+          </div>
+        </div>
+
+        <div class="sticker">made with magic ♡</div>
+      </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section class="section" id="about">
+      <div class="about-layout">
+        <div class="about-art reveal" aria-hidden="true">
+          <div>
+            <div class="flower">✿</div>
+            <p class="handwritten-note">curious by nature</p>
+            <div class="decorative-symbols">☾ ✧ ♡</div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">A little about me</p>
+          <h2>Hi, I'm Divya <span>♡</span></h2>
+          <!-- EDIT ME: Replace with your real biography. -->
+          <p>I'm a Creative Techie who enjoys exploring the space where creativity and technology meet. I love learning new things, bringing ideas to life, and adding thoughtful details to the things I make.</p>
+
+          <p>This little corner of the internet is where I'll share what I'm learning, what I'm building, and the projects I'm proud of. I'm always growing, experimenting, and finding new ways to create.</p>
+
+          <div class="chips">
+            <span>♡ Always learning</span>
+            <span>✧ Creative thinking</span>
+            <span>☁ Big ideas</span>
+          </div>
+
+          <p class="signature">with love, Divya</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Things I'm exploring</p>
+        <h2>My little <span>toolbox</span></h2>
+        <p>Edit these sample skills to reflect what you know and what you're learning.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="card-icon">⌘</div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript — edit this to match your skills.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="card-icon">✿</div>
+          <h3>Creative Design</h3>
+          <p>Visual ideas, layouts, colour palettes, and thoughtful digital details.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="card-icon">☼</div>
+          <h3>Problem Solving</h3>
+          <p>Breaking ideas into smaller steps and finding ways to make them work.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="card-icon">♡</div>
+          <h3>Communication</h3>
+          <p>Sharing ideas, collaborating, and learning from feedback.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="card-icon">✧</div>
+          <h3>Learning & Exploring</h3>
+          <p>Trying new tools, following curiosity, and growing every day.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="card-icon">☁</div>
+          <h3>Your Skill Here</h3>
+          <p>Add another skill, programming language, or software tool.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A few things I've made</p>
+        <h2>Little projects, <span>big feelings</span></h2>
+        <p>Replace these sample cards with your real projects, screenshots, and links.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-art"><span>⌘</span><small>PROJECT 01</small></div>
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
+            <p>EDIT ME: Describe a website you built and what you learned.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div>
+            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add project link ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art"><span>✿</span><small>PROJECT 02</small></div>
+          <div class="project-content">
+            <h3>Creative Concept</h3>
+            <p>EDIT ME: Share a design concept or creative experiment.</p>
+            <div class="project-tags"><span>Design</span><span>Creativity</span></div>
+            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add project link ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art"><span>☾</span><small>PROJECT 03</small></div>
+          <div class="project-content">
+            <h3>Useful Little Tool</h3>
+            <p>EDIT ME: Describe an app, class assignment, or coding challenge.</p>
+            <div class="project-tags"><span>JavaScript</span><span>Problem solving</span></div>
+            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add project link ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art"><span>♡</span><small>PROJECT 04</small></div>
+          <div class="project-content">
+            <h3>Something I'm Learning</h3>
+            <p>EDIT ME: Add a work in progress or a project you want to build.</p>
+            <div class="project-tags"><span>Learning</span><span>In progress</span></div>
+            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add project link ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Let's connect</p>
+          <h2>Have a little <span>idea?</span></h2>
+          <p>I'd love to hear from you — whether it's a project, an opportunity, or just a friendly hello.</p>
+          <p class="handwritten-note">my inbox is open ♡</p>
+
+          <div class="contact-links">
+            <!-- EDIT ME: Replace with your actual email. -->
+            <a href="mailto:theju1301@gmail.com">✉ &nbsp;theju1301@gmail.com</a>
+            <!-- EDIT ME: Replace with your own profile URLs. -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">↗ &nbsp; LinkedIn · add your profile</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">⌘ &nbsp; GitHub · add your profile</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="field">
+            <label for="senderName">Your name</label>
+            <input id="senderName" name="senderName" type="text" placeholder="What should I call you?" required>
+          </div>
+
+          <div class="field">
+            <label for="senderEmail">Your email</label>
+            <input id="senderEmail" name="senderEmail" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="senderMessage">Your message</label>
+            <textarea id="senderMessage" name="senderMessage" placeholder="Write me a little note..." required></textarea>
+          </div>
+
+          <button class="btn form-button" type="submit">Send a little note ♡</button>
+          <p class="form-help">The form opens your email app. Add your real email in script.js first.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Divya S · made with ♡</p>
+    <a href="#home">Back to the top ↑</a>
+  </footer>
 </body>
 </html>
